@@ -18,10 +18,10 @@ const Navbar = () => {
     <nav className='nav'>
       <div className='nav-center'>
         <div className='nav-header'>
+          <h1 className='logo'>Strapi</h1>
           <button className='btn toggle-btn' onClick={openSidebar}>
             <FaBars />
           </button>
-          <h1 className='logo'>Strapi</h1>
         </div>
       </div>
     </nav>
