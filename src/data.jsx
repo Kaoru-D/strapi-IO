@@ -72,15 +72,15 @@ const sublinks = [
     links: [
       {
         id: nanoid(),
-        label: 'starters',
+        label: 'documentación',
         icon: <FaDocker />,
-        url: '/resources/starters',
+        url: '/resources/documentación',
       },
       {
         id: nanoid(),
-        label: 'showcase',
+        label: 'recursos',
         icon: <FaGithubSquare />,
-        url: '/resources/showcase',
+        url: '/resources/recursos',
       },
     ],
   },

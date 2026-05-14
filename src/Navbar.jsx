@@ -23,16 +23,6 @@ const Navbar = () => {
           </button>
           <h1 className='logo'>Strapi</h1>
         </div>
-        <ul className='nav-links' onMouseLeave={closeSubmenu}>
-          {sublinks.map(({ pageId, page }) => (
-            <li key={pageId}>
-              <button onMouseOver={(e) => handleSubmenu(e, page)}>
-                {page}
-              </button>
-            </li>
-          ))}
-        </ul>
-        <button className='btn signin-btn'>Sign in</button>
       </div>
     </nav>
   );
