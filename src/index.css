@@ -377,6 +377,11 @@ nav {
 .close-btn:hover {
   color: var(--primary-700);
 }
+.sidebar-links {
+  display: grid;
+  row-gap: 1rem;
+  margin: 2rem;
+}
 
 .sidebar article {
   margin-bottom: 2rem;
@@ -414,4 +419,32 @@ nav {
   .sidebar {
     display: none;
   }
+}
+
+.nav-links{
+  display: none;
+}
+
+@media screen and (min-width: 992px){
+  .nav-links{
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+  }
+  .nav-center{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border: 2px solid yellow
+  }
+  .nav-link{
+    border: 2px solid blue;
+    padding: 0 1rem;
+    color: var(--white);
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.27rem;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  
 }

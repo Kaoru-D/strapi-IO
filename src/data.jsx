@@ -14,7 +14,7 @@ import { nanoid } from 'nanoid';
 const sublinks = [
   {
     pageId: nanoid(),
-    page: 'product',
+    page: 'Producto',
     links: [
       {
         id: nanoid(),
@@ -38,7 +38,7 @@ const sublinks = [
   },
   {
     pageId: nanoid(),
-    page: 'solutions',
+    page: 'Soluciones',
     links: [
       {
         id: nanoid(),
@@ -67,7 +67,7 @@ const sublinks = [
     ],
   },
   {
-    page: 'resources',
+    page: 'Recursos',
     pageId: nanoid(),
     links: [
       {

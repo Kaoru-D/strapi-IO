@@ -1,6 +1,7 @@
 import sublinks from './data';
 import { useGlobalContext } from './Context';
 import { FaBars } from 'react-icons/fa';
+import NavLinks from './NavLinks';
 
 const Navbar = () => {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
@@ -23,6 +24,7 @@ const Navbar = () => {
             <FaBars />
           </button>
         </div>
+        <NavLinks handleSubmenu={handleSubmenu} />
       </div>
     </nav>
   );
