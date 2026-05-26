@@ -1,12 +1,12 @@
-import sublinks from './data';
 import { useGlobalContext } from './Context';
 import { FaBars } from 'react-icons/fa';
 import NavLinks from './NavLinks';
 
 const Navbar = () => {
-  const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
+  const { openSidebar, openSubmenu, closeSubmenu, setPage } = useGlobalContext();
 
   const handleSubmenu = (e, page) => {
+
     const tempBtn = e.currentTarget.getBoundingClientRect();
     const coordinates = {
       center: (tempBtn.left + tempBtn.right) / 2,
@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='nav'>
+    <nav className='nav' onMouseLeave={closeSubmenu}>
       <div className='nav-center'>
         <div className='nav-header'>
           <h1 className='logo'>Strapi</h1>

@@ -11,7 +11,7 @@ const App = () => {
       <Navbar />
       <Sidebar />
       <Hero />
-      {isSubmenuOpen && <Submenu />}
+      <Submenu />
     </main>
   );
 };

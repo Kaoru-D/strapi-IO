@@ -1,18 +1,16 @@
 import React from 'react'
 import sublinks from './data'
-import { useGlobalContext } from './Context'
 
 const NavLinks = ({ handleSubmenu }) => {
-  const {setPage}= useGlobalContext()
   return (
     <div className='nav-links'>
       {sublinks.map((link) => {
-        const { pageId, page, links } = link;
+        const { pageId, page } = link;
         return (
           <button
             key={pageId}
             className='nav-link'
-            onMouseEnter={() => setPage(page)}
+            onMouseEnter={(e) => handleSubmenu(e,page)}
           >
             {page}
           </button>
