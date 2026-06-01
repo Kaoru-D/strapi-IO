@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='nav' onMouseLeave={closeSubmenu}>
+    <nav className='nav'>
       <div className='nav-center'>
         <div className='nav-header'>
           <h1 className='logo'>Strapi</h1>
